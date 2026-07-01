@@ -1,0 +1,2816 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Point of.</title>
+  <link rel="shortcut icon" href="./img/f.png" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+  <!---->
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js"></script>
+  <style>
+    /*---------------default_setting----------------*/
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    /*----------------------------------------------*/
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="head_top">
+      <p>Point of.</p>
+      <p>당신의 룩을 완성하는 마지막 포인트</p>
+    </nav>
+    <nav class="logo">
+      <div class="logo_box">
+        <div class="logo_img">
+          <a href="#!">
+            <img src="./img/logo_img.jpg" alt="">
+          </a>
+        </div>
+        <div class="logo_r">
+          <div class="logo_r_top">
+            <li class="my">
+              <img src="./img/2_iconcopy.png" alt="">
+              <ul>
+                <li>로그인</li>
+                <li>회원가입</li>
+                <a href="#">
+                  <li>마이페이지</li>
+                </a>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><img src="./img/1_iconcopy.png" alt=""></a>
+            </li>
+            <li>
+              <input type="checkbox" id="search_btn">
+              <label for="search_btn">
+                <img src="./img/4_iconcopy.png" alt="">
+              </label>
+              <div class="search_box">
+                <input type="search" placeholder="상품검색"><i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="menu_box">
+      <div class="menu">
+        <div class="menu_btn">
+          <a href="#!" class="menu_opne">메뉴</a>
+          <a href="#!" class="menu_close"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <ul class="menu_name">
+          <li>귀걸이</li>
+          <li>목걸이</li>
+          <li>팔찌</li>
+          <li>반지</li>
+          <li>헤어ACC</li>
+          <li>전자제품ACC</li>
+          <li>키링</li>
+          <li>BEST</li>
+          <li>이벤트</li>
+          <li>Sale</li>
+          <li>기타</li>
+          <li>셀럽Pick</li>
+        </ul>
+      </div>
+      <div class="menu_down_menu">
+        <div class="ear_menu">
+          <p>스터드</p>
+          <p>링/원터치</p>
+          <p>드롭</p>
+          <p>귀찌</p>
+          <p>이어커프</p>
+          <p>피어싱</p>
+        </div>
+        <div class="neck_menu">
+          <p>초커</p>
+          <p>롱 목걸이</p>
+          <p>팬던트 목걸이</p>
+          <p>체인 목걸이</p>
+          <p>진주 목걸이</p>
+          <p>기타</p>
+        </div>
+        <div class="br_menu">
+          <p>뱅글 팔찌</p>
+          <p>테니스 팔찌</p>
+          <p>참 팔찌</p>
+          <p>슬라이드 팔찌</p>
+          <p>토글 팔찌</p>
+          <p>스트랩 팔찌</p>
+        </div>
+        <div class="ring_menu">
+          <p>밴드형 반지</p>
+          <p>솔리터드 반지</p>
+          <p>스파이럴 반지</p>
+          <p>트윈 반지</p>
+          <p>링 브레스</p>
+          <p>기타</p>
+        </div>
+        <div class="hair_menu">
+          <p>헤어밴드 끈</p>
+          <p>머리띠/밴드</p>
+          <p>기타</p>
+        </div>
+        <div class="deg_menu">
+          <p>에어팟/버즈 케이스</p>
+          <p>아이폰/갤럭시 케이스</p>
+          <p>스마트톡</p>
+          <p>배터리/충전기</p>
+          <p>스마트 워치 스트랩</p>
+        </div>
+        <div class="keyring"></div>
+        <div class="best_menu">
+          <p>오늘의 추천</p>
+          <p>인기상품</p>
+          <p>MBTI 추천</p>
+        </div>
+        <div class="event_menu">
+          <p>시즌 추천</p>
+          <p>할인전</p>
+          <p>기획전</p>
+        </div>
+
+      </div>
+    </nav>
+  </header><!--header-->
+  <div class="wrap">
+    <section class="visual_banner">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/visual_banner_1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/visual_banner_2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/visual_banner_3.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/visual_banner_4.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/visual_banner_5.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="best_box">
+      <div class="best_title">
+        <a href="./sub_best_site.html">
+          <p>Best 9</p>
+        </a>
+      </div>
+      <div class="best_item">
+        <div class="item_l">
+          <img src="./img/best_1copy.jpg" alt="">
+          <div class="overlay">
+            <div class="best_rank">
+              <p>Best1</p>
+            </div>
+            <div class="overlay_icon">
+              <div class="cart">
+                <img src="./img/icon_img_1.png" alt="">
+              </div>
+              <div class="heart">
+                <img src="./img/icon_img_2.png" alt="">
+              </div>
+            </div>
+            <div class="overlay_text">
+              <p>골든 코인 귀걸이</p>
+              <p>22,000원</p>
+            </div>
+          </div>
+        </div>
+        <div class="item_r">
+          <div class="best01">
+            <div class="best01_img">
+              <img src="./img/best_2.jpg" alt="">
+              <div class="overlay_r">
+                <div class="best_rank">
+                  <p>Best02</p>
+                </div>
+                <div class="cart">
+                  <img src="./img/icon_img_1.png" alt="">
+                </div>
+                <div class="heart">
+                  <img src="./img/icon_img_2.png" alt="">
+                </div>
+                <div class="best_detail">
+                  <p>모던월드 순은 목걸이</p>
+                  <p>22,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="best02">
+            <div class="best02_img">
+              <img src="./img/best_3.jpg" alt="">
+              <div class="overlay_r">
+                <div class="best_rank">
+                  <p>Best03</p>
+                </div>
+                <div class="cart">
+                  <img src="./img/icon_img_1.png" alt="">
+                </div>
+                <div class="heart">
+                  <img src="./img/icon_img_2.png" alt="">
+                </div>
+                <div class="best_detail">
+                  <p>큐빅 슬리 드롭 귀걸이</p>
+                  <p>22,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="best03">
+            <div class="best03_img">
+              <img src="./img/best_4.jpg" alt="">
+              <div class="overlay_r">
+                <div class="best_rank">
+                  <p>Best04</p>
+                </div>
+                <div class="cart">
+                  <img src="./img/icon_img_1.png" alt="">
+                </div>
+                <div class="heart">
+                  <img src="./img/icon_img_2.png" alt="">
+                </div>
+                <div class="best_detail">
+                  <p>댄싱 퀸 큐빅 목걸이</p>
+                  <p>22,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="best04">
+            <div class="best04_img">
+              <img src="./img/best_5.jpg" alt="">
+              <div class="overlay_r">
+                <div class="best_rank">
+                  <p>Best05</p>
+                </div>
+                <div class="cart">
+                  <img src="./img/icon_img_1.png" alt="">
+                </div>
+                <div class="heart">
+                  <img src="./img/icon_img_2.png" alt="">
+                </div>
+                <div class="best_detail">
+                  <p>스틱 크리스탈 리본 목걸이</p>
+                  <p>22,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="best05">
+            <div class="best05_img">
+              <img src="./img/best_6.jpg" alt="">
+              <div class="overlay_r">
+                <div class="best_rank">
+                  <p>Best06</p>
+                </div>
+                <div class="cart">
+                  <img src="./img/icon_img_1.png" alt="">
+                </div>
+                <div class="heart">
+                  <img src="./img/icon_img_2.png" alt="">
+                </div>
+                <div class="best_detail">
+                  <p>물결라인 진주 드롭 이어링</p>
+                  <p>22,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="best06">
+            <div class="best06_img">
+              <img src="./img/best_7.jpg" alt="">
+              <div class="overlay_r">
+                <div class="best_rank">
+                  <p>Best07</p>
+                </div>
+                <div class="cart">
+                  <img src="./img/icon_img_1.png" alt="">
+                </div>
+                <div class="heart">
+                  <img src="./img/icon_img_2.png" alt="">
+                </div>
+                <div class="best_detail">
+                  <p>스틱 큐빅 플라워 고무줄 곱창 머리끈</p>
+                  <p>22,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="best07">
+            <div class="best07_img">
+              <img src="./img/best_8.jpg" alt="">
+              <div class="overlay_r">
+                <div class="best_rank">
+                  <p>Best08</p>
+                </div>
+                <div class="cart">
+                  <img src="./img/icon_img_1.png" alt="">
+                </div>
+                <div class="heart">
+                  <img src="./img/icon_img_2.png" alt="">
+                </div>
+                <div class="best_detail">
+                  <p>이즈나브르 큐빅 장식 진주 라인 일자머리핀</p>
+                  <p>22,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="best08">
+            <div class="best08_img">
+              <img src="./img/best_10.jpg" alt="">
+              <div class="overlay_r">
+                <div class="best_rank">
+                  <p>Best09</p>
+                </div>
+                <div class="cart">
+                  <img src="./img/icon_img_1.png" alt="">
+                </div>
+                <div class="heart">
+                  <img src="./img/icon_img_2.png" alt="">
+                </div>
+                <div class="best_detail">
+                  <p>이프온리 체인 드롭 이어링</p>
+                  <p>22,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="event_box">
+      <div class="event_title">
+        <a href="./sub_event_site.html">
+          <p>이벤트</p>
+        </a>
+      </div>
+      <div class="slider4">
+        <div class="slide"><img src="./img/event_img_1.jpg"></div>
+        <div class="slide"><img src="./img/event_img_2.jpg"></div>
+        <div class="slide"><img src="./img/event_img_3.jpg"></div>
+        <div class="slide"><img src="./img/event_img_4.jpg"></div>
+        <div class="slide"><img src="./img/event_img_5.jpg"></div>
+        <div class="slide"><img src="./img/event_img_6.jpg"></div>
+        <div class="slide"><img src="./img/event_img_7.jpg"></div>
+        <div class="slide"><img src="./img/event_img_8.jpg"></div>
+      </div>
+    </section>
+    <section class="today_box">
+      <div class="today_title">
+        <p>오늘의 액세서리</p>
+      </div>
+      <section class="today">
+        <ul class="today_tab">
+          <li class="on">목걸이</li>
+          <li>귀걸이</li>
+          <li>반지</li>
+          <li>헤어ACC</li>
+          <li>전자제품ACC</li>
+          <li>키링</li>
+        </ul>
+        <div class="today_sheet">
+          <div class="on_sheet">
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/neckle_1.jpeg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>프리즈 라인 큐빅 목걸이</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/neckle_2.jpeg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>터키석 원석 슬림 라인 은 목걸이</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/neckle_3.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>실버 진주 쵸커 롱 목걸이</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/neckle_4.jpeg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>델루나 순은 목걸이</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+
+              <div class="img">
+                <img src="./img/neckle_5.jpeg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>그대 걷던 길 팔찌/목걸이</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/neckle_6.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>댄싱 퀸 큐빅 목걸이</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/neckle_7.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>Beads Ball necklace</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/neckle_8.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>스틱 크리스탈 리본 목걸이</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+          <!---->
+          <div>
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/earring_1.gif" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>펄 더블 귀걸이</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/earring_2copy.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>골드 코인 귀걸이</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/earring_3.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>써지컬 스틸 십자가 미니 피어싱</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/earring_4.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>큐빅 슬림 드롭 귀걸이</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/earring_5.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>써지컬 스틸 귀여운 날개 피어싱</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/ring_1.jpeg">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/ring_2.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>이프온리 체인 드롭 이어링</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/ring_3.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---->
+          <div>
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/ring_4.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>눈꽃 스노우 라인 반지</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/ring_5.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>굿나잇 리본 반지</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/ring_6.jpeg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>디어달링 줄라인 반지</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/ring_4.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>리틀파도 링</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/ring_6.jpeg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>블랜앤화이트 플라워 반지</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/ring_4.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>미니 원석 링 레인보우 문스톤 반지</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/ring_2.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>실버 브이 도트 엔틱 포인트 레이어드 반지</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/ring_3.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>실버 엔틱 메쉬링 쌍가락지</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+          <!---->
+          <div>
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/hairacc_1.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>피칸 리본 비녀 헤어핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/hairacc_2.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>푸피나 리본 진주 헤어끈</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/hairacc_3copy.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>펄체리블라섬 집게핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/hairacc_4copy.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>애리얼 스팽글 곱창밴드</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/hairacc_5.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>어쎈 왕진주 비녀 헤어핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/hairacc_6.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아일렛 펀칭 레이스 곱창끈</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/hairacc_7copy.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아루이 큐빅 진주 빗핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/hairacc_8copy.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아루스 진주 리본 헤어끈</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+          <!---->
+          <div>
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/phon_1.webp" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/phone_2.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/phon__3.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/phon_4.webp" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/phon_5.webp" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/phon_6.webp" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/phon_7.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/phon_8.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+          <!---->
+          <div>
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/keyring_1.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/keyring_2.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/keyring_3.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/keyring_4.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/keyring_5.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/keyring_6.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/keyring_7.jpg" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+
+            <div class="today_item">
+              <div class="img">
+                <img src="./img/keyring_8.webp" alt="">
+                <div class="today_overly">
+                  <div class="cart">
+                    <img src="./img/icon_img_1.png" alt="">
+                  </div>
+                  <div class="heart">
+                    <img src="./img/icon_img_2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                <p>50% <del>10,000원</del></p>
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </section>
+    <section class="mbti_box">
+      <div class="mbti_title">
+        <p>MBTI별 추천</p>
+      </div>
+      <section class="mbti">
+        <ul class="mbti_tab">
+          <li class="on_mbti">E</li>
+          <li>I</li>
+          <li>S</li>
+          <li>N</li>
+          <li>T</li>
+          <li>F</li>
+          <li>J</li>
+          <li>P</li>
+        </ul>
+        <div class="mbti_sheet">
+          <div class="on_mbti_sheet">
+            <div class="mbti_h">
+              <p>#화려한</p>
+              <p>#트렌디</p>
+              <p>#포인트</p>
+            </div>
+            <div class="sheet_mbti">
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/neckle_8.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>플라워 크리스탈 체인 귀걸이</p>
+                  <!--<p>50% <del>10,000원</del></p>-->
+                  <p>5,000원</p>
+                </div>
+              </div>
+
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_13.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>스틱 크리스탈 리본 목걸이</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_2.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>슬림 올림머리 얇은 일자 메탈 롱 머리핀</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/earring_4.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>Freshwater pearl necklace</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/best_1copy_1.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>Love, antique keyring</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_18.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>퍼터 큐빅 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/best_item_6.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>스틱 큐빅 플라워 고무줄 곱창 머리끈</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/best_7.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>눈꽃 스노우 라인 반지</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--mbti_1-->
+          <div>
+            <div class="mbti_h">
+              <p>#미니멀</p>
+              <p>#감성</p>
+              <p>#데일리</p>
+            </div>
+            <div class="sheet_mbti">
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/best_8.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>써지컬 스틸 귀여운 날개 피어싱</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/best_3.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>써지컬 스틸 십자가 미니 피어싱</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/neckle_3.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>모던월드 순은 목걸이</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_19.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>Bam Bangle Bracelet</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_21.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>실버 은 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/neckle_5.jpeg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>Beads Ball</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc _10.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/earring_4.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>black circle drop earring</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--mbti_2-->
+          <div>
+            <div class="mbti_h">
+              <p>#베이직</p>
+              <p>#실용적</p>
+              <p>#깔끔한</p>
+            </div>
+            <div class="sheet_mbti">
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/keyring_5.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>샤우드 리본 하트 레이어드 키링</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_16.png" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_15.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>heart&rose bangle</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/neckle_7.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>sliver925 돌고래 자개 목걸이</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_15.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>실크 라인 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/earring_10.png" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>Slam big flower earring</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_19.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>스네티크 실키 체인 뱀줄 925 실버 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/earring_3.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>버터플 클립 귀걸이</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--mbti_3-->
+          <div>
+            <div class="mbti_h">
+              <p>#유니크</p>
+              <p>#감성</p>
+              <p>#무드</p>
+            </div>
+            <div class="sheet_mbti">
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/phone_1.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>마켓허니피그</p>
+                  <p>50% <del>10,800원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/phone_2.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>샤인 스타 별 도트 구슬톡</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/neckle_5.jpeg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p> 로즈가든 원석 가지 귀걸이</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>13,800원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_14.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>모던시티 watch</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/ring_4.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>미니 막대 귀걸이</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_3copy.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>배색 롱 리본 헤어끈</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_17.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>샤이니티 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_12.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>실버 벨리타 로즈 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--mbti_4-->
+          <div>
+            <div class="mbti_h">
+              <p>#모던</p>
+              <p>#시크</p>
+              <p>#도화적</p>
+            </div>
+            <div class="sheet_mbti">
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/keyring_7.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>다이나믹 핑크 블럭 키홀더 키링</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_12.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>펄체리블라섬 집게핀</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_16.png" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>푸피나 리본 진주 헤어끈</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_18.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>피크닉 진주 뱅글 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_13.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>하트 장식 담수 진주 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/earring_5.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>펄 더블 귀걸이</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/neckle_4.jpeg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>터키석 원석 슬림 라인 은 목걸이</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_14copy.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>여행스케치</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--mbti_5-->
+          <div>
+            <div class="mbti_h">
+              <p>#따뜻함</p>
+              <p>#러블리</p>
+              <p>#감성</p>
+            </div>
+            <div class="sheet_mbti">
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_15.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>아즈나브르 진주 볼륨 슬림 라인 일자핀</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_15.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>애리얼 스팽글 곱창밴드</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_10.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>윈디데이 사각 포인트 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_20.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>와이드 벌집 큐빅 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_2.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>어쎈 왕진주 비녀 헤어핀</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_15.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>아루스 진주 리본 헤어끈</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/earring_11.png" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>벛꼭 연가 큐빅 꽃 이어링</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_13.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>런웨이 블랙 오닉스 원석 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--mbti_6-->
+          <div>
+            <div class="mbti_h">
+              <p>#클래식</p>
+              <p>#정돈된</p>
+              <p>#타임리스</p>
+            </div>
+            <div class="sheet_mbti">
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_6.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>레트로 라운드 얇은 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_1.jpeg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>데이지 참 핑크원석 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_22.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>드레시 리본 귀걸이</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/earring_2copy.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>Rose petal trace bracelet</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/earring_6.jpeg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>Knight circle drop earring</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_21.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>labradorite</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_13.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>matallic thread through hair clip</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/keyring_2.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>Mini hyper keyring</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--mbti_7-->
+          <div>
+            <div class="mbti_h">
+              <p>#자유로운</p>
+              <p>#힙한</p>
+              <p>#트렌디</p>
+            </div>
+            <div class="sheet_mbti">
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/best_2.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>골드 코인 귀걸이</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/earring_1.gif" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>써지컬 십자가 미니 피어싱</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/best_1copy_1.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>Pebble bracelet in sterling silver</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/neckle_5.jpeg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>Shell necklace in sterling silver and beads</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/hairacc_2.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>Twinkle twinkle necklace</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/ring_2.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>디어달링 줄라인 반지</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/earing_13.png" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>드라마 큐빅 드롭 이어링</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+              <div class="mbti_item">
+                <div class="mbti_img">
+                  <img src="./img/br_12.jpg" alt="">
+                </div>
+                <div class="mbti_detail">
+                  <p>글로우 체인 스틱 큐빅 팔찌</p>
+                  <p>50% <del>10,000원</del></p>
+                  <p>5,000원</p>
+                </div>
+              </div>
+            </div>
+            <!--mbti_8-->
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="season_box">
+      <input type="radio" name="season" id="chk-01" checked>
+      <input type="radio" name="season" id="chk-02">
+      <input type="radio" name="season" id="chk-03">
+      <input type="radio" name="season" id="chk-04">
+      <section class="season">
+        <div class="season_l">
+
+          <div class="season_menu">
+            <label for="chk-01">봄</label>
+            <label for="chk-02">여름</label>
+            <label for="chk-03">가을</label>
+            <label for="chk-04">겨울</label>
+          </div>
+        </div>
+        <div class="season_sheet">
+          <div class="season01">
+            <div class="sheet_season">
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/br_14.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>slam big flower earring</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/hairacc_13.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>네이크로바 진주 머리끈</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>10,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/br_17.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>컬러플 와이드 뱅글</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>10,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/br_9.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>데이지 참 핑크 원석 팔찌</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>28,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/keyring_2.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>다이나믹 볼륨 볼 키링</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/hairacc_8copy.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>루시아 비즈 꽃 포인트 헤어핀</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="season02">
+            <div class="sheet_season">
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/br_19.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>14k 유닛 팔찌</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/neckle_2.jpeg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>silver925 돌고래 자개 목걸이</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>35,000원</del></p>
+                    <p>30,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/phon_1.webp" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>스위밍 풀 휴대폰 케이스</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/keyring_1.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>Triangle Twirl keyring</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/ring_2.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>리틀 파도 링</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/hairacc_14copy.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>아루이 큐빅 진주 빗핀</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="season03">
+            <div class="sheet_season">
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/br_12.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>데일리 커플 팔찌 천연석 팔찌</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/best_2.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>델루나 순은 목걸이</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/br_15.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>심플 골드 팔찌</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/hairacc_16.png" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>아일렛 펀칭 레이스 곱창끈</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/earing_13.png" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>골드 코인 귀걸이</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class=" season_img">
+                  <img src="./img/neckle_8.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>모던월드 순은 목걸이</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="season04">
+            <div class="sheet_season">
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/neckle_2.jpeg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>스틱 크리스탈 리본 목걸이</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/hairacc_13.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>셀룰로이드 고양이 비녀</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/br_14.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>소울리스 뱅글 팔찌</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/br_17.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>실버 리틀 스타 팔찌</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/br_14.jpg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>slam big flower earring</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="season_item">
+                <div class="season_img">
+                  <img src="./img/ring_1.jpeg" alt="">
+                  <div class="season_overly">
+                    <div class="cart">
+                      <img src="./img/icon_img_1.png" alt="">
+                    </div>
+                    <div class="heart">
+                      <img src="./img/icon_img_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="season_detail">
+                  <div class="detail_l">
+                    <p>실버 미니 슬림 사각 스퀘어 링</p>
+                  </div>
+                  <div class="detail_r">
+                    <p>50%</p>
+                    <p><del>30,000원</del></p>
+                    <p>15,000원</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!---->
+    <section class="celeb_box">
+      
+    </section>
+    <section class="notice_box">
+      <div class="notice_title">
+        <p>Point of. 단독 서비스</p>
+      </div>
+      <div class="notice">
+        <div class="notice01">
+          <div class="notice_top">
+            <img src="./img/notice_icon01.png" alt="">
+          </div>
+          <p>Point of. 신규 혜택</p>
+          <p>Point of. 회원만의 특별한 혜택을 놓치지마세요</p>
+        </div>
+        <div class="notice02">
+          <div class="notice_top">
+            <img src="./img/notice_icon02.png" alt="">
+          </div>
+          <p>오늘주문 오늘출발</p>
+          <p>오늘 주문하고, 오늘 출발하는 Point of.서비스를 경험해보세요</p>
+        </div>
+        <div class="notice03">
+          <div class="notice_top">
+            <img src="./img/notice_icon03.png" alt="">
+          </div>
+          <p>선물하기</p>
+          <p>고급 포장은 물론, 마음을 담은 카드까지 함께 선물하세요</p>
+        </div>
+        <div class="notice04">
+          <div class="notice_top">
+            <img src="./img/notice_icon04.png" alt="">
+          </div>
+          <p>매장상담 예약하기</p>
+          <p>전문가가 고객님만을 위한 링 스타일과 세팅을 제안해 드려요</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <nav class="foot_top">
+      <p>Point of.</p>
+      <p>당신의 룩을 완성하는 마지막 포인트</p>
+    </nav>
+    <nav class="foot_mid">
+      <div class="foot_mid_li">
+        <a href="#">
+          <p>회사소개</p>
+        </a>
+        <a href="#">
+          <p>이용약관</p>
+        </a>
+        <a href="#">
+          <p>개인정보처리방침</p>
+        </a>
+        <a href="#">
+          <p>이용안내</p>
+        </a>
+      </div>
+    </nav>
+    <nav class="foot_bot">
+      <div class="footer_l">
+        <p>법인명 : Point of.</p>
+        <p>대표자 : 조수현</p>
+        <p>사업자등록번호 : 1213215132</p>
+        <p>[사업자정보확인] : 통신판매업 신고 2026 부산 동래구 0283호</p>
+        <p>전화 : 010-0111-1111</p>
+        <p>팩스 : 010-0111-1111</p>
+        <p>주소 : 부산광역시 동래구 명장로</p>
+        <p>개인정보관리책임 : 조수현(이메일@naver.com)</p>
+        <p>구매안전서비스 : 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰이 가입한 PG 에스크로 구매안전 서비스를 이용하실 수 있습니다.</p>
+      </div>
+      <div class="footer_m">
+        <p>고객문의 대표전화</p>
+        <p>010-0111-1111</p>
+        <p>입금계좌안내</p>
+        <p>하나은행 : 030-22222-22222</p>
+        <p>신한은행 : 030-12345-22655</p>
+        <p>예금주 : 조수현</p>
+      </div>
+      <div class="footer_r">
+        <a href="#">
+          <p>페이스북<i class="fa-brands fa-facebook"></i></p>
+        </a>
+        <a href="">
+          <p>인스타그램<i class="fa-brands fa-instagram"></i></p>
+        </a>
+        <a href="">
+          <p>카카오톡<i class="fa-brands fa-kakao-talk"></i></p>
+        </a>
+        <a href="">
+          <p>유튜브<i class="fa-brands fa-youtube"></i></p>
+        </a>
+      </div>
+    </nav>
+  </footer>
+  <div id="popup">
+    <button class="close">x</button>
+    <div><img src="./img/icon_img_1.png" alt=""></div>
+    <p>
+      장바구니에 담겼습니다
+    </p>
+    <p>계속 쇼핑하겠습니까?</p>
+    <div class="detail_bot">
+      <label for="cart">계속 쇼핑하기</label>
+      <a href="#!">장바구니 보기</a>
+    </div>
+  </div>
+  <div id="popup_heart">
+    <div><img src="./img/icon_img_2.png" alt=""></div>
+    <p>찜 목록에 추가되었습니다.</p>
+    <p>찜 목록으로 이동하시겠습니까?</p>
+    <button class="close_heart">x</button>
+  </div>
+  <aside class="wing_box">
+    <div class="wing_banner">
+      <span>로그인</span>
+      <span>고객센터</span>
+      <span>찜 목록</span>
+      <span>Q&A</span>
+      <a href="./mypage_site.html"><span>주문조회</span></a>
+      <div class="wing_img">
+        <p>최근 본 상품</p>
+        <div><a href="./detail_site.html"><img src="./img/detail_item.png" alt=""></a></div>
+        <div><a href="#!"><img src="./img/best_1.jpg" alt=""></a></div>
+      </div>
+      <a href="#top_btn"><span>Top</span></a>
+    </div>
+  </aside>
+</body>
+
+</html>

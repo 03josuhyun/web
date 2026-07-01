@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="./img/f.png" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <!---->
+  <link rel="stylesheet" href="./sub_sheet.css">
+  <script src="./sub_sheet.js"></script>
+</head>
+
+<body>
+  <style>
+    /*---------------default_setting----------------*/
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    /*----------------------------------------------*/
+  </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="head_top">
+        <p>Point of.</p>
+        <p>당신의 룩을 완성하는 마지막 포인트</p>
+      </nav>
+      <nav class="logo">
+        <div class="logo_box">
+          <div class="logo_img">
+            <a href="#!">
+              <img src="./img/logo_img.jpg" alt="">
+            </a>
+          </div>
+          <div class="logo_r">
+            <div class="logo_r_top">
+              <li class="my">
+                <img src="./img/2_iconcopy.png" alt="">
+                <ul>
+                  <li>로그인</li>
+                  <li>회원가입</li>
+                  <a href="#">
+                    <li>마이페이지</li>
+                  </a>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><img src="./img/1_iconcopy.png" alt=""></a>
+              </li>
+              <li>
+                <input type="checkbox" id="search_btn">
+                <label for="search_btn">
+                  <img src="./img/4_iconcopy.png" alt="">
+                </label>
+                <div class="search_box">
+                  <input type="search" placeholder="상품검색"><i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="menu_box">
+        <div class="menu">
+          <div class="menu_btn">메뉴</div>
+          <ul class="menu_name">
+            <li>귀걸이</li>
+            <li>목걸이</li>
+            <li>팔찌</li>
+            <li>반지</li>
+            <li>헤어ACC</li>
+            <li>전자제품ACC</li>
+            <li>키링</li>
+            <li>BEST</li>
+            <li>이벤트</li>
+            <li>Sale</li>
+            <li>기타</li>
+            <li>셀럽Pick</li>
+          </ul>
+        </div>
+        <div class="menu_down_menu">
+          <div class="ear_menu">
+            <p>스터드</p>
+            <p>링/원터치</p>
+            <p>드롭</p>
+            <p>귀찌</p>
+            <p>이어커프</p>
+            <p>피어싱</p>
+          </div>
+          <div class="neck_menu">
+            <p>초커</p>
+            <p>롱 목걸이</p>
+            <p>팬던트 목걸이</p>
+            <p>체인 목걸이</p>
+            <p>진주 목걸이</p>
+            <p>기타</p>
+          </div>
+          <div class="br_menu">
+            <p>뱅글 팔찌</p>
+            <p>테니스 팔찌</p>
+            <p>참 팔찌</p>
+            <p>슬라이드 팔찌</p>
+            <p>토글 팔찌</p>
+            <p>스트랩 팔찌</p>
+          </div>
+          <div class="ring_menu">
+            <p>밴드형 반지</p>
+            <p>솔리터드 반지</p>
+            <p>스파이럴 반지</p>
+            <p>트윈 반지</p>
+            <p>링 브레스</p>
+            <p>기타</p>
+          </div>
+          <div class="hair_menu">
+            <p>헤어밴드 끈</p>
+            <p>머리띠/밴드</p>
+            <p>기타</p>
+          </div>
+          <div class="deg_menu">
+            <p>에어팟/버즈 케이스</p>
+            <p>아이폰/갤럭시 케이스</p>
+            <p>스마트톡</p>
+            <p>배터리/충전기</p>
+            <p>스마트 워치 스트랩</p>
+          </div>
+          <div class="keyring"></div>
+          <div class="best_menu">
+            <p>오늘의 추천</p>
+            <p>인기상품</p>
+            <p>MBTI 추천</p>
+          </div>
+          <div class="event_menu">
+            <p>시즌 추천</p>
+            <p>할인전</p>
+            <p>기획전</p>
+          </div>
+
+        </div>
+      </nav>
+    </header><!--header-->
+    <div class="wrap">
+      <aside class="wing_box">
+        <div class="wing_banner">
+          <span>로그인</span>
+          <span>고객센터</span>
+          <span>찜 목록</span>
+          <span>Q&A</span>
+          <span>주문조회</span>
+          <div class="wing_img">
+            <p>최근 본 상품</p>
+            <div><img src="./img/best_1.jpg" alt=""></div>
+            <div><img src="./img/best_2.jpg" alt=""></div>
+          </div>
+          <a href="#top_btn"><span>Top</span></a>
+        </div>
+      </aside>
+
+      <section class="sub_menu">
+        <div class="sub_title">
+          <p>팔찌</p>
+        </div>
+        <div class="sub_item">
+
+          <div class="item_box">
+            <a href="./detail_site.html">
+              <div class="item_img">
+                <img src="./img/detail_item.png" alt="">
+              </div>
+              <div class="item_detail">
+                <div class="detail_l">
+                  <p>싱글 링크 팔찌</p>
+                  <p>5,000원</p>
+                </div>
+            </a>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart">
+                <label for="cart"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart">
+                <label for="heart">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_1.jpeg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>그대 걷던 길 팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart01">
+                <label for="cart01"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart01">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart01">
+                <label for="heart01">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart01">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_2.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>글로우 체인 스틱 큐빅 팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart02">
+                <label for="cart02"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart02">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart02">
+                <label for="heart02">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart02">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_3.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>데이지 참 핑크 원석 팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart03">
+                <label for="cart03"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart03">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart03">
+                <label for="heart03">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart03">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_4.jpeg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>Silver 925 볼 뱀줄 체인</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart04">
+                <label for="cart04"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart04">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart04">
+                <label for="heart04">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart04">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_5.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>실크 라인 팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart05">
+                <label for="cart05"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart05">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart05">
+                <label for="heart05">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart05">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_6.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>스네티크 실키 체인 뱀줄 925 실버 팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart06">
+                <label for="cart06"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart06">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart06">
+                <label for="heart06">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart06">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_7.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>라일락 담수진주 팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart07">
+                <label for="cart07"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart07">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart07">
+                <label for="heart07">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart07">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_8.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>럭셜 큐빅 다이아 라인 팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart08">
+                <label for="cart08"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart08">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart08">
+                <label for="heart08">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart08">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_9.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>레트로 라운드 얇은 팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart09">
+                <label for="cart09"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart09">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart09">
+                <label for="heart09">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart09">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_10.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>하트 장식 담수 진주 팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart10">
+                <label for="cart10"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart10">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart10">
+                <label for="heart10">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart10">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_11.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>모던시티 WATCH</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart11">
+                <label for="cart11"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart11">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart11">
+                <label for="heart11">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart11">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_12.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>볼 앤 스틱 925 실버팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart12">
+                <label for="cart12"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart12">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart12">
+                <label for="heart12">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart12">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_13.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>블랑로즈 장미 큐빅 팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart13">
+                <label for="cart13"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart13">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart13">
+                <label for="heart13">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart13">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_14.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>샤이니티 팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart14">
+                <label for="cart14"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart14">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart14">
+                <label for="heart14">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart14">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="item_img">
+            <img src="./img/br_15.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="detail_l">
+              <p>소울리스 뱅글 팔찌</p>
+              <p>5,000원</p>
+            </div>
+            <div class="detail_r">
+              <div class="cart_img">
+                <input type="checkbox" id="cart15">
+                <label for="cart15"><img src="./img/icon_img_1.png" alt=""></label>
+                <div class="cart_detail">
+                  <p>선택하신 상품이 장바구니에 담겼습니다.</p>
+                  <div class="detail_bot">
+                    <span><label for="cart15">계속 쇼핑하기</label></span>
+                    <span><a href="./mypage_site.html">장바구니 보기</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="heart_img">
+                <input type="checkbox" id="heart15">
+                <label for="heart15">
+                  <img class="heart_off" src="./img/icon_img_2.png" alt="">
+                  <img class="heart_on" src="./img/icon_img_2click.png" alt="">
+                </label>
+                <div class="heart_detail">
+                  <p>찜하셨습니다.</p>
+                  <span><label for="heart15">닫기</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <section class="page_num">
+      <div class="num">
+        <label for="chk_01"><i class="fa-solid fa-angle-left"></i></label>
+        <label for="chk_01">1</label>
+        <label for="chk_02">2</label>
+        <label for="chk_03">3</label>
+        <label for="chk_04">...</label>
+        <label for="chk_05">7</label>
+        <label for="chk_06"><i class="fa-solid fa-angle-right"></i></label>
+      </div>
+    </section>
+    </section>
+    </div>
+    <footer class="footer">
+      <nav class="foot_top">
+        <p>Point of.</p>
+        <p>당신의 룩을 완성하는 마지막 포인트</p>
+      </nav>
+      <nav class="foot_mid">
+        <div class="foot_mid_li">
+          <a href="#">
+            <p>회사소개</p>
+          </a>
+          <a href="#">
+            <p>이용약관</p>
+          </a>
+          <a href="#">
+            <p>개인정보처리방침</p>
+          </a>
+          <a href="#">
+            <p>이용안내</p>
+          </a>
+        </div>
+      </nav>
+      <nav class="foot_bot">
+        <div class="footer_l">
+          <p>법인명 : Point of.</p>
+          <p>대표자 : 조수현</p>
+          <p>사업자등록번호 : 1213215132</p>
+          <p>[사업자정보확인] : 통신판매업 신고 2026 부산 동래구 0283호</p>
+          <p>전화 : 010-0111-1111</p>
+          <p>팩스 : 010-0111-1111</p>
+          <p>주소 : 부산광역시 동래구 명장로</p>
+          <p>개인정보관리책임 : 조수현(이메일@naver.com)</p>
+          <p>구매안전서비스 : 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰이 가입한 PG 에스크로 구매안전 서비스를 이용하실 수 있습니다.</p>
+        </div>
+        <div class="footer_m">
+          <p>고객문의 대표전화</p>
+          <p>010-0111-1111</p>
+          <p>입금계좌안내</p>
+          <p>하나은행 : 030-22222-22222</p>
+          <p>신한은행 : 030-12345-22655</p>
+          <p>예금주 : 조수현</p>
+        </div>
+        <div class="footer_r">
+          <a href="#">
+            <p>페이스북<i class="fa-brands fa-facebook"></i></p>
+          </a>
+          <a href="">
+            <p>인스타그램<i class="fa-brands fa-instagram"></i></p>
+          </a>
+          <a href="">
+            <p>카카오톡<i class="fa-brands fa-kakao-talk"></i></p>
+          </a>
+          <a href="">
+            <p>유튜브<i class="fa-brands fa-youtube"></i></p>
+          </a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+
+</html>
