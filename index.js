@@ -1,11 +1,29 @@
 $(function () {
-  $('.menu_btn').hover(function () {
+  const btnOpen = $('.menu_box .menu .menu_btn');
+  const btnClose = $('.menu_box .menu .menu_close');
+
+  btnOpen.click(function () {
+    $('.menu_down_menu').stop().animate({
+      height: 300
+    }, 300);
+    btnOpen.css('display', 'none');
+    btnClose.css('display', 'block');
+  });
+  btnClose.click(function () {
+    $('.menu_down_menu').stop().animate({
+      height: 0
+    }, 300);
+    btnClose.css('display', 'none');
+    btnOpen.css('display', 'block');
+  });
+
+  /*$('.menu_btn').hover(function () {
     $('.menu_down_menu').slideDown(300);
   });
   $('.menu_btn').mouseout(function () {
     $('.menu_down_menu').slideUp(300);
   });
-  //full_down_menu
+  //full_down_menu*/
 
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
@@ -61,8 +79,8 @@ $(function () {
     sheet_mbti.removeClass('on_mbti_sheet');
     sheet_mbti.eq(mbti_index).addClass('on_mbti_sheet');
   });
-
-  /*const tab_season = $('.season_box .season .season_tab li');
+/*
+  const tab_season = $('.season_box .season .season_tab li');
   const sheet_season = $('.season_box .season .season_sheet>div');
   let season_index = 0;
 
@@ -76,13 +94,29 @@ $(function () {
     sheet_season.eq(season_index).addClass('on_season_sheet');
   });
 
-  const tab_bg = $('.season_box .season .season_tab');
+  $('#spring').click(function () {
+    $('.season_bg').css({
+      'background-image': 'url("./img/spring_bg.jpg")'
+    });
+  });
 
-  $('#spring').click(function(){
-    tab_bg.attr('src','./img/spring.jpg').css('display','block');
+  $('#summer').click(function () {
+    $('.season_bg').css({
+      'background-image': 'url("./img/summer_bg.jpg")'
+    });
+  });
+
+  $('#fall').click(function () {
+    $('.season_bg').css({
+      'background-image': 'url("./img/fall_bg.jpg")'
+    });
   });
   */
-
+  $('#winter').click(function () {
+    $('.season_bg').css({
+      'background-image': 'url("./img/winter_bg.jpg")'
+    });
+  });
   const img_l = $('.celeb .celeb_r .celeb_img_l');
   const img_r = $('.celeb .celeb_r .celeb_img_r');
   tab_mbti.click(function () {
@@ -108,22 +142,10 @@ $(function () {
     $('#popup_celeb_r').fadeOut();
   });
 
-  const tab_season = $('.season_box_event .season_event_box .season_tab li');
-  const sheet_season = $('.season_box_event .season_event_box .season_sheet>div');
-  let season_event_index = 0;
-  tab_season.click(function () {
-    tab_season.removeClass('on_season');
-    $(this).addClass('on_season');
-
-    season_event_index = $(this).index();
-
-    sheet_season.removeClass('on_season_sheet');
-    sheet_season.eq(season_event_index).addClass('on_season_sheet');
-  });
-
   $('.cart').click(function () {
     $('#popup').fadeIn();
   });
+
   $('.heart').click(function () {
     $('#popup_heart').fadeIn();
   });
@@ -133,4 +155,13 @@ $(function () {
   $('.close_heart').click(function () {
     $('#popup_heart').fadeOut();
   });
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 400) {
+      $('.wing_box').fadeIn(300);
+    } else {
+      $('.wing_box').fadeOut(300);
+    }
+  });
+
 });
